@@ -1,0 +1,916 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Outfit:wght@400;500;600;700;800;900&family=Caveat:wght@600;700&display=swap');
+
+/* ========================================================
+   GreenWave Luxury Architectural Landscape Design System
+   Palette: Deep Pine Spruce (#1E4445) • Forest Obsidian (#233436)
+   Warm Terracotta (#AB6937) • Radiant Amber Gold (#EBA328)
+   Warm Clay (#E8C2B3) • Soft Quartz Sand (#EDD8DF / #faf7f4)
+   ======================================================== */
+:root {
+  /* Architectural Earth & Spruce Signature Palette */
+  --gw-primary: #1E4445;          /* Deep Pine Spruce Teal */
+  --gw-primary-hover: #163334;    /* Rich Spruce Shadow */
+  --gw-accent: #EBA328;           /* Radiant Amber Gold */
+  --gw-accent-hover: #d9921f;     /* Deep Sunlit Ochre */
+  --gw-terracotta: #AB6937;       /* Warm Earth / Copper Clay */
+  --gw-clay: #E8C2B3;             /* Warm Clay Sand / Peach Tint */
+  --gw-sand: #EDD8DF;             /* Pale Quartz Mineral Cream */
+  --gw-darkforest: #233436;       /* Spruce Obsidian Base */
+  
+  --gw-teal: #1E4445;             /* Architectural Spruce */
+  --gw-darkteal: #233436;         /* Obsidian Spruce for dark blocks */
+  --gw-emerald-dark: #162829;     /* Deep Night Spruce Base */
+
+  /* Architectural Light Backgrounds & Tints */
+  --gw-offwhite: #faf7f4;         /* Soft Sand Quartz Canvas */
+  --gw-purewhite: #ffffff;        /* Pure White Elevated Surfaces */
+  --gw-softmint: #fbf5ef;         /* Subtle Sand/Clay Wash */
+  --gw-lightgreen: #f5ebe6;       /* Soft Terracotta Tint Pill */
+
+  /* Structural Neutrals */
+  --gw-charcoal: #162829;         /* High-Contrast Spruce Obsidian Headings */
+  --gw-gray: #475569;             /* Readable Body Text */
+  --gw-muted: #64748b;            /* Subtitles & Meta */
+  --gw-lightgray: #ede4dc;        /* Warm Architectural Micro-Borders */
+
+  /* Legacy Dynamic Mapping */
+  --theme-primary: #1E4445;
+  --theme-primary-hover: #163334;
+  --theme-primary-light: #fbf5ef;
+  --theme-primary-dark: #233436;
+  --theme-accent: #EBA328;
+  --theme-accent-hover: #d9921f;
+  --theme-accent-teal: #AB6937;
+  --theme-badge-bg: rgba(235, 163, 40, 0.12);
+  --theme-badge-text: #965f10;
+}
+
+/* ========================================================
+   Architectural Dark Mode (Deep Forest Spruce Obsidian & Gold)
+   ======================================================== */
+.dark {
+  --gw-offwhite: #162829;         /* Deep Spruce Forest Night (0% blue) */
+  --gw-purewhite: #203436;        /* Elevated Deep Spruce Card Surface */
+  --gw-charcoal: #ffffff;         /* Crisp Pure White Headings */
+  --gw-gray: #cbd5e1;             /* Clean Light Slate Body Text */
+  --gw-muted: #94a3b8;            /* Meta Slate Text */
+  --gw-lightgray: rgba(235, 163, 40, 0.2); /* Warm Amber-Spruce Micro-Borders */
+  
+  --theme-primary: #EBA328;       /* Amber Gold Primary in Dark Mode */
+  --theme-primary-hover: #f5b443;
+  --theme-primary-light: #1E4445;
+  --theme-primary-dark: #233436;
+  --theme-accent: #EBA328;
+  --theme-accent-teal: #AB6937;
+  --theme-badge-bg: rgba(235, 163, 40, 0.18);
+  --theme-badge-text: #fcd34d;
+}
+
+.dark body {
+  background-color: #162829 !important;
+  color: #cbd5e1 !important;
+}
+
+/* Sitewide Dark Surface Standardizations */
+.dark .dark\:bg-\[\#111111\],
+.dark .dark\:bg-\[\#121212\],
+.dark .dark\:bg-\[\#0f0f10\],
+.dark [class*="dark:bg-[#111111]"],
+.dark [class*="dark:bg-[#121212]"],
+.dark [class*="dark:bg-[#0f0f10]"] {
+  background-color: #162829 !important;
+}
+
+.dark .dark\:bg-\[\#181818\],
+.dark .dark\:bg-\[\#191919\],
+.dark .dark\:bg-\[\#222222\],
+.dark [class*="dark:bg-[#181818]"],
+.dark [class*="dark:bg-[#191919]"] {
+  background-color: #203436 !important;
+}
+
+.dark [class*="dark:border-neutral-800"],
+.dark [class*="dark:border-neutral-700"] {
+  border-color: rgba(235, 163, 40, 0.18) !important;
+}
+
+/* ========================================================
+   Floating Island Navigation Header
+   ======================================================== */
+.floating-nav-island {
+  position: fixed;
+  top: 2.75rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0 1rem;
+  z-index: 50;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floating-nav-island.scrolled {
+  top: 2.25rem;
+}
+
+@media (max-width: 640px) {
+  .floating-nav-island {
+    top: 2.25rem;
+    padding: 0 0.75rem;
+  }
+  .floating-nav-island.scrolled {
+    top: 2rem;
+  }
+}
+
+.nav-island-card {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(250, 247, 244, 0.95);
+  border: 1px solid rgba(232, 194, 179, 0.65);
+  box-shadow: 0 12px 30px -6px rgba(35, 52, 54, 0.12), 0 4px 12px -2px rgba(35, 52, 54, 0.05);
+  border-radius: 9999px;
+  padding: 0.5rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark .nav-island-card {
+  background: rgba(26, 43, 44, 0.95);
+  border-color: rgba(235, 163, 40, 0.25);
+  box-shadow: 0 12px 30px -6px rgba(10, 20, 20, 0.6);
+}
+
+@media (max-width: 640px) {
+  .nav-island-card {
+    border-radius: 9999px;
+    padding: 0.5rem 0.875rem;
+    gap: 0.5rem;
+  }
+  .floating-nav-island .btn-gw-primary {
+    display: none !important;
+  }
+}
+
+/* Dual Logo Dark/Light Responsive System */
+.logo-dark {
+  display: none !important;
+}
+.dark .logo-light {
+  display: none !important;
+}
+.dark .logo-dark {
+  display: block !important;
+}
+
+/* Modern Nav Link Pills */
+.nav-link-pill {
+  padding: 0.5rem 0.95rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #475569;
+  transition: all 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.nav-link-pill:hover {
+  color: #1E4445;
+  background: rgba(30, 68, 69, 0.09);
+}
+
+.dark .nav-link-pill {
+  color: #d1d9da;
+}
+
+.dark .nav-link-pill:hover {
+  color: #EBA328;
+  background: rgba(235, 163, 40, 0.16);
+}
+
+.nav-link-pill.active {
+  color: #1E4445;
+  background: rgba(30, 68, 69, 0.14);
+  font-weight: 700;
+}
+
+.dark .nav-link-pill.active {
+  color: #EBA328;
+  background: rgba(235, 163, 40, 0.22);
+  font-weight: 700;
+}
+
+/* Modern Frosted Dropdown Menu */
+.nav-group {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-dropdown-flyout {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  left: 0;
+  min-width: 17rem;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(232, 194, 179, 0.75);
+  border-radius: 1.25rem;
+  padding: 0.5rem;
+  box-shadow: 0 20px 40px -8px rgba(35, 52, 54, 0.16), 0 2px 6px rgba(0, 0, 0, 0.04);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 60;
+  pointer-events: none;
+}
+
+[dir="rtl"] .nav-dropdown-flyout {
+  left: auto;
+  right: 0;
+}
+
+.dark .nav-dropdown-flyout {
+  background: rgba(26, 43, 44, 0.98);
+  border-color: rgba(235, 163, 40, 0.25);
+  box-shadow: 0 20px 40px -8px rgba(0, 0, 0, 0.6);
+}
+
+.nav-group:hover .nav-dropdown-flyout,
+.nav-group:focus-within .nav-dropdown-flyout {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.nav-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #162829;
+  transition: all 0.15s ease;
+}
+
+.dark .nav-dropdown-item {
+  color: #d1d9da;
+}
+
+.nav-dropdown-item:hover {
+  background: rgba(235, 163, 40, 0.12);
+  color: #AB6937;
+  transform: translateX(3px);
+}
+
+[dir="rtl"] .nav-dropdown-item:hover {
+  transform: translateX(-3px);
+}
+
+.dark .nav-dropdown-item:hover {
+  background: rgba(235, 163, 40, 0.18);
+  color: #EBA328;
+}
+
+/* ========================================================
+   Architectural Action Buttons (Radiant Amber Gold & Spruce)
+   ======================================================== */
+.btn-gw-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #EBA328 0%, #AB6937 100%);
+  color: #ffffff !important;
+  border-radius: 9999px;
+  font-weight: 700;
+  padding: 0.65rem 1.5rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(235, 163, 40, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-gw-primary:hover {
+  background: linear-gradient(135deg, #f5b443 0%, #ba7541 100%);
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(235, 163, 40, 0.45);
+}
+
+.btn-gw-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  color: #1E4445;
+  border: 1.5px solid #1E4445;
+  border-radius: 9999px;
+  font-weight: 700;
+  padding: 0.65rem 1.5rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-gw-secondary:hover {
+  background-color: #f7f1ec;
+  color: #AB6937;
+  border-color: #AB6937;
+  transform: translateY(-1px);
+}
+
+.dark .btn-gw-secondary {
+  background-color: #203436;
+  border-color: rgba(235, 163, 40, 0.35);
+  color: #ffffff;
+}
+
+.dark .btn-gw-secondary:hover {
+  background-color: #284244;
+  border-color: #EBA328;
+  color: #EBA328;
+}
+
+/* Secondary Button on Permanently Dark Surfaces */
+[class~="bg-[#121212]"] .btn-gw-secondary,
+[class~="bg-[#0f0f10]"] .btn-gw-secondary,
+[class~="bg-[#0b291e]"] .btn-gw-secondary,
+[class~="bg-[#111111]"] .btn-gw-secondary,
+[class~="bg-[#233436]"] .btn-gw-secondary,
+[class~="bg-[#162829]"] .btn-gw-secondary,
+[class~="bg-slate-900"] .btn-gw-secondary,
+[class~="bg-slate-950"] .btn-gw-secondary {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(235, 163, 40, 0.4);
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+}
+
+[class~="bg-[#121212]"] .btn-gw-secondary:hover,
+[class~="bg-[#0f0f10]"] .btn-gw-secondary:hover,
+[class~="bg-[#0b291e]"] .btn-gw-secondary:hover,
+[class~="bg-[#111111]"] .btn-gw-secondary:hover,
+[class~="bg-[#233436]"] .btn-gw-secondary:hover,
+[class~="bg-[#162829]"] .btn-gw-secondary:hover,
+[class~="bg-slate-900"] .btn-gw-secondary:hover,
+[class~="bg-slate-950"] .btn-gw-secondary:hover {
+  background-color: rgba(235, 163, 40, 0.25);
+  border-color: #EBA328;
+  color: #ffffff;
+}
+
+.btn-gw-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #EBA328 0%, #AB6937 50%, #1E4445 100%);
+  color: #ffffff !important;
+  border-radius: 9999px;
+  font-weight: 700;
+  padding: 0.65rem 1.5rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 18px rgba(171, 105, 55, 0.3);
+}
+
+.btn-gw-accent:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
+.btn-gw-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: #1E4445 !important;
+  border: 1.5px solid #1E4445;
+  border-radius: 9999px;
+  font-weight: 700;
+  padding: 0.6rem 1.4rem;
+  transition: all 0.2s ease;
+}
+
+.btn-gw-outline:hover {
+  background: #1E4445;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+.dark .btn-gw-outline {
+  border-color: #EBA328;
+  color: #EBA328 !important;
+}
+
+.dark .btn-gw-outline:hover {
+  background: #EBA328;
+  color: #162829 !important;
+}
+
+/* ========================================================
+   Modern Icon Containers (Pill & Rounded Square Styles)
+   ======================================================== */
+.icon-box-modern {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  background: #f7f1ec;
+  color: #1E4445;
+  border: 1px solid #e8c2b3;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 6px rgba(30, 68, 69, 0.08);
+}
+
+.dark .icon-box-modern {
+  background: rgba(30, 68, 69, 0.5);
+  color: #EBA328;
+  border-color: rgba(235, 163, 40, 0.35);
+}
+
+.icon-box-modern:hover,
+.card-hover-lift:hover .icon-box-modern {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 8px 16px rgba(235, 163, 40, 0.25);
+  background: linear-gradient(135deg, #EBA328 0%, #AB6937 100%);
+  color: #ffffff;
+}
+
+.icon-box-teal {
+  background: #fcf6f0;
+  color: #AB6937;
+  border-color: #f0d8ca;
+}
+
+.dark .icon-box-teal {
+  background: rgba(171, 105, 55, 0.2);
+  color: #E8C2B3;
+  border-color: rgba(171, 105, 55, 0.35);
+}
+
+.icon-box-amber {
+  background: #fef9ed;
+  color: #d97706;
+  border-color: #fde68a;
+}
+
+/* Modern Glowing Badges */
+.badge-glow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: rgba(235, 163, 40, 0.12);
+  color: #92580c;
+  border: 1px solid rgba(235, 163, 40, 0.3);
+}
+
+.dark .badge-glow,
+[class~="bg-[#121212]"] .badge-glow,
+[class~="bg-[#0f0f10]"] .badge-glow,
+[class~="bg-[#0b291e]"] .badge-glow,
+[class~="bg-[#111111]"] .badge-glow,
+[class~="bg-[#233436]"] .badge-glow,
+[class~="bg-[#162829]"] .badge-glow,
+[class~="bg-slate-900"] .badge-glow,
+[class~="bg-slate-950"] .badge-glow,
+[class~="bg-emerald-950"] .badge-glow {
+  background: rgba(235, 163, 40, 0.18) !important;
+  color: #fcd34d !important;
+  border-color: rgba(235, 163, 40, 0.45) !important;
+}
+
+/* ========================================================
+   LIGHT THEME ARCHITECTURAL CONTRAST ENFORCEMENT
+   Soft Quartz Sand Canvas • Pure White Cards • Obsidian Spruce Text
+   ======================================================== */
+html:not(.dark) {
+  color-scheme: light;
+}
+
+html:not(.dark) body {
+  background-color: #faf7f4 !important;
+  color: #334155 !important;
+}
+
+html:not(.dark) .bg-slate-50,
+html:not(.dark) [class*="bg-slate-50"] {
+  background-color: #faf7f4 !important;
+}
+
+html:not(.dark) .bg-slate-100,
+html:not(.dark) [class*="bg-slate-100"] {
+  background-color: #f5efe8 !important;
+}
+
+/* Glass Card & Light Card Surfaces in Light Mode */
+html:not(.dark) .glass-card {
+  background: rgba(255, 255, 255, 0.96) !important;
+  border: 1px solid rgba(232, 194, 179, 0.6) !important;
+  box-shadow: 0 10px 25px -5px rgba(35, 52, 54, 0.08), 0 2px 6px rgba(35, 52, 54, 0.03) !important;
+}
+
+/* All headings inside glass cards & light containers: Deepest Spruce Obsidian */
+html:not(.dark) .glass-card h1,
+html:not(.dark) .glass-card h2,
+html:not(.dark) .glass-card h3,
+html:not(.dark) .glass-card h4,
+html:not(.dark) .glass-card h5,
+html:not(.dark) .glass-card h6,
+html:not(.dark) [class*="bg-white"] h1:not(.text-white):not([class*="gradient-text"]),
+html:not(.dark) [class*="bg-white"] h2:not(.text-white):not([class*="gradient-text"]),
+html:not(.dark) [class*="bg-white"] h3:not(.text-white):not([class*="gradient-text"]),
+html:not(.dark) [class*="bg-white"] h4:not(.text-white):not([class*="gradient-text"]),
+html:not(.dark) [class*="bg-slate-50"] h1:not(.text-white):not([class*="gradient-text"]),
+html:not(.dark) [class*="bg-slate-50"] h2:not(.text-white):not([class*="gradient-text"]),
+html:not(.dark) [class*="bg-slate-50"] h3:not(.text-white):not([class*="gradient-text"]),
+html:not(.dark) [class*="bg-slate-50"] h4:not(.text-white):not([class*="gradient-text"]) {
+  color: #162829 !important;
+}
+
+html:not(.dark) .glass-card p,
+html:not(.dark) .glass-card li,
+html:not(.dark) .glass-card td {
+  color: #334155 !important;
+}
+
+html:not(.dark) .glass-card .text-slate-500,
+html:not(.dark) .glass-card .text-slate-400 {
+  color: #475569 !important;
+}
+
+html:not(.dark) body > :not(footer) .text-slate-400,
+html:not(.dark) main .text-slate-400,
+html:not(.dark) header .text-slate-400 {
+  color: #64748b;
+}
+
+html:not(.dark) body > :not(footer) .text-slate-500,
+html:not(.dark) main .text-slate-500,
+html:not(.dark) header .text-slate-500 {
+  color: #475569;
+}
+
+/* ========================================================
+   ARCHITECTURAL FOOTER (Spruce Obsidian & Amber Gold)
+   ======================================================== */
+footer,
+footer.bg-\[\#0f0f10\],
+footer.bg-\[\#111111\],
+footer.bg-\[\#121212\] {
+  background-color: #162829 !important;
+  color: #cbd5e1 !important;
+  border-top: 1px solid rgba(235, 163, 40, 0.25) !important;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
+footer .font-heading {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+}
+
+footer p {
+  color: #cbd5e1 !important;
+  line-height: 1.6 !important;
+}
+
+footer a {
+  color: #cbd5e1 !important;
+  transition: all 0.2s ease !important;
+}
+
+footer a:hover {
+  color: #EBA328 !important;
+}
+
+html:not(.dark) footer,
+html:not(.dark) footer p,
+html:not(.dark) footer span,
+html:not(.dark) footer li,
+html:not(.dark) footer a,
+html:not(.dark) footer div {
+  color: #cbd5e1;
+}
+
+html:not(.dark) footer h1,
+html:not(.dark) footer h2,
+html:not(.dark) footer h3,
+html:not(.dark) footer h4,
+html:not(.dark) footer h5,
+html:not(.dark) footer h6 {
+  color: #ffffff !important;
+}
+
+html:not(.dark) footer .text-slate-400,
+html:not(.dark) footer .text-neutral-400,
+html:not(.dark) footer .text-slate-500,
+html:not(.dark) footer .text-neutral-500 {
+  color: #94a3b8 !important;
+}
+
+html:not(.dark) footer .text-slate-300,
+html:not(.dark) footer .text-slate-200,
+html:not(.dark) footer .text-neutral-300,
+html:not(.dark) footer .text-white {
+  color: #ffffff !important;
+}
+
+html:not(.dark) footer .text-emerald-400,
+html:not(.dark) footer .text-emerald-500 {
+  color: #EBA328 !important;
+}
+
+html:not(.dark) footer .text-teal-400 {
+  color: #E8C2B3 !important;
+}
+
+html:not(.dark) footer [class*="border-neutral"],
+html:not(.dark) footer .border-neutral-800,
+html:not(.dark) footer .border-b,
+html:not(.dark) footer .border-t {
+  border-color: rgba(235, 163, 40, 0.2) !important;
+}
+
+footer .footer-contact-card {
+  background-color: #1c3233 !important;
+  border: 1px solid rgba(235, 163, 40, 0.2) !important;
+  transition: all 0.2s ease !important;
+}
+
+footer .footer-contact-card:hover {
+  border-color: #EBA328 !important;
+  background-color: #233b3d !important;
+}
+
+footer .footer-link-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #cbd5e1 !important;
+  transition: all 0.2s ease !important;
+}
+
+footer .footer-link-item:hover {
+  color: #EBA328 !important;
+  transform: translateX(3px);
+}
+
+/* Nav dropdown links in light mode */
+html:not(.dark) .nav-dropdown-item {
+  color: #162829 !important;
+}
+
+html:not(.dark) .nav-dropdown-item:hover {
+  color: #AB6937 !important;
+  background: rgba(235, 163, 40, 0.12) !important;
+}
+
+/* ========================================================
+   DARK THEME GLASS-CARD SURFACE (Deep Spruce Night)
+   ======================================================== */
+.dark .glass-card {
+  background: rgba(32, 52, 54, 0.92) !important;
+  border: 1px solid rgba(235, 163, 40, 0.2) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.55) !important;
+}
+
+.dark .glass-card h1,
+.dark .glass-card h2,
+.dark .glass-card h3,
+.dark .glass-card h4,
+.dark .glass-card h5,
+.dark .glass-card h6 {
+  color: #ffffff !important;
+}
+
+.dark .glass-card p,
+.dark .glass-card li,
+.dark .glass-card td {
+  color: #cbd5e1 !important;
+}
+
+.dark .glass-card .text-slate-500,
+.dark .glass-card .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+/* Top Announcement Bar */
+.fixed.top-0.inset-x-0.z-50.bg-\[\#121212\] {
+  background-color: #132223 !important;
+  border-bottom: 1px solid rgba(235, 163, 40, 0.2) !important;
+}
+
+.pulse-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background-color: #EBA328;
+  box-shadow: 0 0 0 0 rgba(235, 163, 40, 0.7);
+  animation: pulseAmber 2s infinite;
+}
+
+@keyframes pulseAmber {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(235, 163, 40, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(235, 163, 40, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(235, 163, 40, 0); }
+}
+
+/* Card Hover Lift & Glass Panels */
+.card-hover-lift {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.card-hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 35px -8px rgba(35, 52, 54, 0.12), 0 6px 12px -3px rgba(35, 52, 54, 0.05);
+  border-color: rgba(235, 163, 40, 0.45);
+}
+
+.dark .card-hover-lift:hover {
+  box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.55);
+  border-color: rgba(235, 163, 40, 0.55);
+}
+
+.glass-card {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.25s ease;
+}
+
+/* Gradient Text */
+.gradient-text-emerald {
+  background: linear-gradient(135deg, #1E4445 0%, #AB6937 60%, #EBA328 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .gradient-text-emerald {
+  background: linear-gradient(135deg, #fcd34d 0%, #EBA328 50%, #E8C2B3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(35, 52, 54, 0.05);
+}
+.dark ::-webkit-scrollbar-track {
+  background: rgba(22, 40, 41, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(235, 163, 40, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(235, 163, 40, 0.7);
+}
+
+/* RTL Adjustments */
+[dir="rtl"] {
+  text-align: right;
+}
+[dir="rtl"] .icon-flip-rtl {
+  transform: scaleX(-1);
+}
+[dir="rtl"] .space-x-reverse > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+/* Accordion Component */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out, opacity 0.25s ease;
+  opacity: 0;
+}
+.accordion-item.active .accordion-content {
+  max-height: 600px;
+  opacity: 1;
+}
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+/* Table Responsive */
+.table-responsive-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Modal Pop Animation */
+@keyframes modalPop {
+  0% { opacity: 0; transform: scale(0.96); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.animate-modal-pop {
+  animation: modalPop 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ========================================================
+   Interactive Before & After Comparison Slider Component
+   ======================================================== */
+.ba-container {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: ew-resize;
+  touch-action: pan-y;
+}
+
+.ba-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.ba-before img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100% !important;
+  object-fit: cover !important;
+  max-width: none !important;
+  pointer-events: none;
+}
+
+.ba-slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 10px rgba(235, 163, 40, 0.8);
+  z-index: 20;
+  transform: translateX(-50%);
+  cursor: ew-resize;
+  pointer-events: none;
+}
+
+.ba-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 3px solid #EBA328;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35), 0 0 14px rgba(235, 163, 40, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AB6937;
+  font-size: 14px;
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+  pointer-events: none;
+}
+
+.ba-container:hover .ba-handle,
+.ba-container:active .ba-handle {
+  transform: translate(-50%, -50%) scale(1.12);
+  background: linear-gradient(135deg, #EBA328 0%, #AB6937 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45), 0 0 18px rgba(235, 163, 40, 0.8);
+}
+
+.dark .ba-handle {
+  background: #162829;
+  border-color: #EBA328;
+  color: #fcd34d;
+}
+
+.dark .ba-container:hover .ba-handle,
+.dark .ba-container:active .ba-handle {
+  background: linear-gradient(135deg, #EBA328 0%, #AB6937 100%);
+  color: #ffffff;
+}

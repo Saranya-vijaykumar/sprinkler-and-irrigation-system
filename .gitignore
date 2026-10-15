@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Logs & Environment
+*.log
+npm-debug.log*
+
+# Temporary test/scratch images
+scratch_*.jpg
+test_*.jpg
+temp_*
+
+# Operating System Files
+.DS_Store
+Thumbs.db

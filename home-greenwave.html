@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenWave - Architectural Estate Sprinkler &amp; Irrigation Systems</title>
+  <!-- Favicon for Browser Tab (Edge, Chrome, Safari) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+  <meta name="description" content="Master-planned architectural sprinkler and smart irrigation engineering for fine lawns, expansive residential estates, and acreage properties. Zero lawn disruption and guaranteed water efficiency.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            spruce: {
+              DEFAULT: '#1E4445',
+              dark: '#233436',
+              deep: '#162829',
+              light: '#2d6365'
+            },
+            amber: {
+              DEFAULT: '#EBA328',
+              gold: '#EBA328',
+              hover: '#d9921f'
+            },
+            terracotta: {
+              DEFAULT: '#AB6937',
+              light: '#E8C2B3',
+              sand: '#EDD8DF'
+            },
+            gw: {
+              primary: '#1E4445',
+              primaryHover: '#162829',
+              accent: '#EBA328',
+              accentHover: '#d9921f',
+              terracotta: '#AB6937',
+              clay: '#E8C2B3',
+              sand: '#EDD8DF',
+              teal: '#1E4445',
+              darkteal: '#233436',
+              charcoal: '#162829',
+              gray: '#475569',
+              muted: '#64748b',
+              lightgray: '#ede4dc',
+              offwhite: '#faf7f4',
+              softmint: '#f5ece6'
+            },
+            emerald: {
+              50: '#f5f8f8',
+              100: '#e5ecec',
+              200: '#c5d5d6',
+              300: '#94b3b5',
+              400: '#EBA328',
+              500: '#1E4445',
+              600: '#19393a',
+              700: '#142f30',
+              800: '#102627',
+              900: '#0d1f20',
+              950: '#081415'
+            },
+            teal: {
+              50: '#fdf8f5',
+              100: '#f8ede6',
+              200: '#f0d8ca',
+              300: '#E8C2B3',
+              400: '#ca8a5c',
+              500: '#AB6937',
+              600: '#92562b',
+              700: '#754320',
+              800: '#5c3519',
+              900: '#482a15',
+              950: '#2b170a'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Outfit"', 'sans-serif'],
+            script: ['"Caveat"', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 dark:bg-[#111111] text-slate-700 dark:text-neutral-300 antialiased selection:bg-emerald-500 selection:text-white pt-24 sm:pt-28">
+
+  <!-- Top Announcement Bar (Subtle & Sleek) -->
+  <div class="fixed top-0 inset-x-0 z-50 bg-[#121212] text-neutral-300 text-[11px] sm:text-xs py-1.5 px-4 border-b border-neutral-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-medium text-slate-200">Spring Irrigation Special:</span>
+        <span class="hidden sm:inline text-slate-400">Save 20% on Smart WiFi Controllers &amp; Free 12-Point Yard Audit.</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <a href="tel:5553829283" class="hover:text-emerald-400 transition-colors font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-phone text-emerald-400 text-[10px]"></i>
+          <span>(555) 382-9283</span>
+        </a>
+        <span class="text-slate-600 hidden md:inline">|</span>
+        <span class="hidden md:inline text-emerald-400 font-semibold">EPA WaterSense® Partner</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ultra-Modern Floating Island Navigation Header -->
+  <header class="floating-nav-island">
+    <div class="nav-island-card">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-2 group shrink-0">
+        <img src="assets/images/logo-greenwave.svg" alt="GreenWave Smart Irrigation" class="logo-light h-9 sm:h-10 w-auto transition-transform duration-200 group-hover:scale-[1.02]">
+        <img src="assets/images/logo-greenwave-white.svg" alt="GreenWave Smart Irrigation" class="logo-dark h-9 sm:h-10 w-auto transition-transform duration-200 group-hover:scale-[1.02]">
+      </a>
+
+      <!-- Center Navigation Links (Pill Style) -->
+      <nav class="hidden lg:flex items-center space-x-1 rtl:space-x-reverse font-semibold text-sm">
+        
+        <a href="index.html" class="nav-link-pill">Home</a>
+<a href="about.html" class="nav-link-pill ">About</a>
+        <a href="services.html" class="nav-link-pill ">Services</a>
+        <a href="pricing.html" class="nav-link-pill ">Pricing</a>
+        <a href="gallery.html" class="nav-link-pill ">Gallery</a>
+        <a href="contact.html" class="nav-link-pill ">Contact</a>
+      </nav>
+
+      <!-- Right Side Controls & CTA -->
+      <div class="flex items-center space-x-2 sm:space-x-3 rtl:space-x-reverse">
+        
+        <!-- Dark / Light Mode Toggle -->
+        <button class="theme-toggle-btn w-9 h-9 rounded-full bg-slate-100 dark:bg-[#222222] text-slate-600 dark:text-neutral-300 hover:bg-slate-200 dark:hover:bg-slate-700 flex items-center justify-center transition-colors" title="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-sun sun-icon hidden text-amber-400 text-xs"></i>
+          <i class="fa-solid fa-moon moon-icon text-slate-600 dark:text-neutral-300 text-xs"></i>
+        </button>
+
+        <!-- RTL Toggle -->
+        <button class="rtl-toggle-btn px-2.5 py-1 text-xs font-bold rounded-full bg-slate-100 dark:bg-[#222222] text-slate-600 dark:text-neutral-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors hidden sm:block" title="Toggle Direction">
+          <span class="rtl-label">RTL</span>
+        </button>
+
+        <!-- High-Impact Gradient CTA Button -->
+        <a href="contact.html" data-open-quote class="btn-gw-primary text-xs sm:text-sm">
+          <span>Get Free Quote</span>
+          <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-btn" class="w-9 h-9 rounded-full bg-slate-100 dark:bg-[#222222] text-slate-700 dark:text-neutral-300 flex items-center justify-center lg:hidden hover:bg-slate-200" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars text-sm"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="drawer-backdrop" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 rtl:right-auto rtl:left-0 w-80 max-w-[85%] h-full bg-white dark:bg-[#111111] shadow-2xl z-50 transform translate-x-full rtl:-translate-x-full transition-transform duration-300 ease-in-out flex flex-col border-l border-slate-200 dark:border-neutral-800">
+    <div class="p-5 border-b border-slate-100 dark:border-neutral-800 flex items-center justify-between">
+      <img src="assets/images/logo-greenwave.svg" alt="GreenWave" class="logo-light h-8 w-auto">
+      <img src="assets/images/logo-greenwave-white.svg" alt="GreenWave" class="logo-dark h-8 w-auto">
+      <button id="close-drawer-btn" class="p-2 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+    </div>
+    <div class="p-5 flex-1 overflow-y-auto space-y-2 text-sm font-semibold">
+      <div class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Navigation</div>
+      <a href="index.html" class="block px-3.5 py-2 rounded-xl text-slate-700 dark:text-neutral-300 hover:bg-slate-100 dark:hover:bg-slate-800">Home</a>
+      <a href="about.html" class="block px-3.5 py-2 rounded-xl text-slate-700 dark:text-neutral-300 hover:bg-slate-100 dark:hover:bg-slate-800">About Us</a>
+      <a href="services.html" class="block px-3.5 py-2 rounded-xl text-slate-700 dark:text-neutral-300 hover:bg-slate-100 dark:hover:bg-slate-800">Services</a>
+      <a href="pricing.html" class="block px-3.5 py-2 rounded-xl text-slate-700 dark:text-neutral-300 hover:bg-slate-100 dark:hover:bg-slate-800">Pricing &amp; ROI</a>
+      <a href="gallery.html" class="block px-3.5 py-2 rounded-xl text-slate-700 dark:text-neutral-300 hover:bg-slate-100 dark:hover:bg-slate-800">Gallery &amp; Before/After</a>
+      <a href="contact.html" class="block px-3.5 py-2 rounded-xl text-slate-700 dark:text-neutral-300 hover:bg-slate-100 dark:hover:bg-slate-800">Contact &amp; Audit</a>
+      <a href="faq.html" class="block px-3.5 py-2 rounded-xl text-slate-700 dark:text-neutral-300 hover:bg-slate-100 dark:hover:bg-slate-800">Help FAQ</a>
+      <a href="terms.html" class="block px-3.5 py-2 rounded-xl text-slate-700 dark:text-neutral-300 hover:bg-slate-100 dark:hover:bg-slate-800">Warranty Terms</a>
+    </div>
+    <div class="p-5 border-t border-slate-100 dark:border-neutral-800 space-y-2">
+      <a href="contact.html" data-open-quote class="w-full btn-gw-primary text-xs justify-center py-3">
+        <span>Get Instant Quote</span>
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </a>
+      <a href="tel:5553829283" class="w-full btn-gw-secondary text-xs justify-center py-2.5">
+        <i class="fa-solid fa-phone text-emerald-600"></i>
+        <span>Call (555) 382-9283</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       HERO SECTION: ARCHITECTURAL ESTATE SHOWCASE
+       Unique Estate & Acreage Messaging
+       ======================================================== -->
+  <section class="relative overflow-hidden py-14 lg:py-20 bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-[#111111] dark:via-[#161616] dark:to-[#111111]">
+    <!-- Ambient Glow Blobs -->
+    <div class="absolute top-1/4 -left-48 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/3 -right-48 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+        
+        <!-- Left Column: Compelling Editorial Pitch for Estates & Acreage -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left rtl:lg:text-right">
+          
+          <!-- Category Subtitle Strip -->
+          <div class="text-[11px] sm:text-xs font-bold tracking-widest uppercase text-emerald-600 dark:text-emerald-400 flex items-center justify-center lg:justify-start gap-2">
+            <span>ESTATE HYDRAULIC ARCHITECTURE</span>
+            <span>&bull;</span>
+            <span>TRENCHLESS INSTALLATION</span>
+            <span>&bull;</span>
+            <span>SMART CONSERVATION</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="text-4xl sm:text-5xl lg:text-[54px] font-heading font-extrabold text-slate-900 dark:text-white leading-[1.12] tracking-tight">
+            Architectural Precision <br>
+            <span class="gradient-text-emerald">Irrigation Engineering</span> for Fine Estates
+          </h1>
+
+          <!-- Subheadline & Description -->
+          <div class="space-y-3">
+            <p class="text-lg sm:text-xl font-bold text-slate-800 dark:text-neutral-200 tracking-tight">
+              Surgical Accuracy. Subsurface Micro-Zoning. Zero Lawn Scarring.
+            </p>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-neutral-300 leading-relaxed font-normal max-w-xl mx-auto lg:mx-0">
+              Master-planned hydraulic architectures engineered for sprawling grounds, estate lawns, and botanical landscapes. We eliminate dry spots, equalize water pressure, and cut municipal water tariffs by up to 50% without digging destructive trenches.
+            </p>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="contact.html" data-open-quote class="btn-gw-primary text-sm sm:text-base px-8 py-3.5 shadow-xl shadow-emerald-600/30">
+              <span>Schedule Estate Audit</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+
+            <a href="#watch-our-work" id="hero-watch-btn" class="btn-gw-secondary text-sm sm:text-base px-7 py-3.5">
+              <i class="fa-solid fa-play text-emerald-600 dark:text-emerald-400 text-xs"></i>
+              <span>Watch Our Work</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges Strip -->
+          <div class="pt-4 border-t border-slate-200/80 dark:border-neutral-800 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-500 dark:text-neutral-400">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-shield-halved text-emerald-600"></i>
+              <span>Licensed Master Irrigator #LI-982341</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-seedling text-emerald-600"></i>
+              <span>Zero-Trench Vibratory Guarantee</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-leaf text-emerald-600"></i>
+              <span>EPA WaterSense® Partner</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Distinct Card Box Image Container with Live Telemetry Badges -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-lg lg:max-w-none">
+            
+            <!-- The Card Box Container (Unique Hero Card Image) -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-neutral-800 bg-[#151515] group">
+              <img src="assets/images/hero-home2-card.jpg" alt="Active Multi-Zone Commercial &amp; Residential Sprinkler System" class="w-full h-[420px] sm:h-[480px] object-cover object-center filter saturate-[1.12] transition-transform duration-700 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              
+              <!-- Bottom Image Label / Status Pill -->
+              <div class="absolute bottom-4 left-4 right-4 text-white p-3 rounded-2xl backdrop-blur-md bg-black/60 border border-white/10 flex items-center justify-between">
+                <div>
+                  <div class="text-xs font-bold">Zone 4: Precision MP Rotator Overlap</div>
+                  <div class="text-[10px] text-emerald-400">Matched Precipitation &bull; 42 PSI Calibrated &bull; Zero Runoff</div>
+                </div>
+                <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold border border-emerald-500/40">Active Flow</span>
+              </div>
+            </div>
+
+            <!-- Floating Chip 1: Top-Right Weather Sensing -->
+            <div class="absolute -top-4 -right-4 sm:-right-6 glass-card rounded-2xl p-3 shadow-xl flex items-center gap-3 animate-bounce" style="animation-duration: 4s;">
+              <div class="icon-box-modern w-10 h-10 rounded-xl text-emerald-600 bg-emerald-50 dark:bg-emerald-950/60">
+                <i class="fa-solid fa-satellite text-sm"></i>
+              </div>
+              <div class="text-left rtl:text-right">
+                <div class="text-[11px] font-bold text-slate-900 dark:text-white">Smart Radar Telemetry</div>
+                <div class="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold">Real-Time Weather Sync</div>
+              </div>
+            </div>
+
+            <!-- Floating Chip 2: Bottom-Left Regulated Pressure -->
+            <div class="absolute -bottom-5 -left-4 sm:-left-6 glass-card rounded-2xl p-3 shadow-xl flex items-center gap-3">
+              <div class="icon-box-modern w-10 h-10 rounded-xl text-teal-600 bg-teal-50 dark:bg-teal-950/60">
+                <i class="fa-solid fa-gauge-high text-sm"></i>
+              </div>
+              <div class="text-left rtl:text-right">
+                <div class="text-[11px] font-bold text-slate-900 dark:text-white">Regulated 45 PSI</div>
+                <div class="text-[10px] text-slate-500 dark:text-neutral-400 font-medium">Zero Mist Vapor Loss</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       4 ESTATE ENGINEERING PILLARS BAR
+       Custom Technical Capabilities for Large Properties
+       ======================================================== -->
+  <section class="bg-white dark:bg-[#121212] border-b border-slate-200/80 dark:border-neutral-800 py-10 sm:py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 lg:divide-x divide-slate-200 dark:divide-neutral-800 text-center">
+        
+        <!-- Pillar 1 -->
+        <div class="lg:px-6 flex flex-col items-center">
+          <div class="icon-box-modern mb-4 text-emerald-600 dark:text-emerald-400">
+            <i class="fa-solid fa-compass-drafting text-lg"></i>
+          </div>
+          <h3 class="text-base font-bold font-heading text-slate-900 dark:text-white mb-1.5">Topographical CAD Zoning</h3>
+          <p class="text-xs text-slate-500 dark:text-neutral-400 max-w-xs leading-relaxed">
+            Laser contour mapping calibrated for elevation slopes, sun arcs, and turf percolation rates.
+          </p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="lg:px-6 flex flex-col items-center">
+          <div class="icon-box-modern mb-4 text-emerald-600 dark:text-emerald-400">
+            <i class="fa-solid fa-seedling text-lg"></i>
+          </div>
+          <h3 class="text-base font-bold font-heading text-slate-900 dark:text-white mb-1.5">Zero-Trench Vibratory Plowing</h3>
+          <p class="text-xs text-slate-500 dark:text-neutral-400 max-w-xs leading-relaxed">
+            High-frequency blades pull heavy-duty poly laterals 10" sub-turf with zero destructive open trenches.
+          </p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="lg:px-6 flex flex-col items-center">
+          <div class="icon-box-modern mb-4 text-emerald-600 dark:text-emerald-400">
+            <i class="fa-solid fa-faucet text-lg"></i>
+          </div>
+          <h3 class="text-base font-bold font-heading text-slate-900 dark:text-white mb-1.5">Commercial Brass Manifolds</h3>
+          <p class="text-xs text-slate-500 dark:text-neutral-400 max-w-xs leading-relaxed">
+            Industrial solenoid valves engineered to handle 85+ PSI continuous pressure without water hammer.
+          </p>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="lg:px-6 flex flex-col items-center">
+          <div class="icon-box-modern mb-4 text-emerald-600 dark:text-emerald-400">
+            <i class="fa-solid fa-satellite-dish text-lg"></i>
+          </div>
+          <h3 class="text-base font-bold font-heading text-slate-900 dark:text-white mb-1.5">Ultrasonic Flow Telemetry</h3>
+          <p class="text-xs text-slate-500 dark:text-neutral-400 max-w-xs leading-relaxed">
+            Instant automatic shutoff upon a 0.5 GPM anomaly to safeguard estate landscapes from line fractures.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 3: "WATCH OUR WORK" - INTERACTIVE BEFORE & AFTER SHOWCASE
+       Featuring Real Transformation Imagery & Video Breakdown
+       ======================================================== -->
+  <section id="watch-our-work" class="py-20 bg-slate-50 dark:bg-[#151515] border-b border-slate-200/80 dark:border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+          <i class="fa-solid fa-film"></i>
+          <span>WATCH OUR WORK &bull; REAL TRANSFORMATION</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-heading font-black text-slate-900 dark:text-white">
+          From Scorched Brown Yard to Emerald Estate Showcase
+        </h2>
+        <p class="text-sm text-slate-600 dark:text-neutral-300 leading-relaxed">
+          See the visual proof of precision irrigation. Below is an actual 1.5-acre property in Westlake Hills suffering from severe drought dry spots, transformed into lush golf-course grade turf in just 14 days following our smart zoned retrofit.
+        </p>
+      </div>
+
+      <!-- Before & After Comparison Interactive Card -->
+      <div class="bg-white dark:bg-[#181818] rounded-3xl p-6 sm:p-8 border border-slate-200/80 dark:border-neutral-800 shadow-xl">
+        
+        <!-- Interactive Controls Bar -->
+        <div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-slate-100 dark:border-neutral-800">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-slate-500 dark:text-neutral-400">View Mode:</span>
+            <div class="inline-flex rounded-xl p-1 bg-slate-100 dark:bg-[#222222]">
+              <button id="view-split-btn" class="px-3 py-1 rounded-lg text-xs font-bold bg-white dark:bg-emerald-600 text-slate-900 dark:text-white shadow-sm transition-all">Side-by-Side</button>
+              <button id="view-before-btn" class="px-3 py-1 rounded-lg text-xs font-bold text-slate-600 dark:text-neutral-300 hover:text-slate-900 transition-all">Before Only</button>
+              <button id="view-after-btn" class="px-3 py-1 rounded-lg text-xs font-bold text-slate-600 dark:text-neutral-300 hover:text-slate-900 transition-all">After Only</button>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <button id="watch-video-btn" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md">
+              <i class="fa-solid fa-circle-play text-xs"></i>
+              <span>Watch Video Walkthrough</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Before & After Media Showcase -->
+        <div id="comparison-container" class="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-6 items-stretch">
+          
+          <!-- BEFORE CARD -->
+          <div id="before-card" class="rounded-2xl overflow-hidden border border-amber-500/30 bg-amber-50/10 dark:bg-amber-950/10 flex flex-col justify-between group">
+            <div class="relative overflow-hidden aspect-[16/10]">
+              <img src="assets/images/home2-before.jpg" alt="Lawn Before Smart Sprinkler Installation - Brown patchy dry turf" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-amber-600/90 text-white text-[11px] font-extrabold uppercase tracking-wide backdrop-blur-sm shadow">
+                <i class="fa-solid fa-triangle-exclamation mr-1"></i> BEFORE RETROFIT
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 p-2.5 rounded-xl bg-black/70 backdrop-blur-md text-white text-xs">
+                <div class="font-bold text-amber-300">Severe Drought Stress &amp; Uneven Coverage</div>
+                <div class="text-[11px] text-slate-300">Inefficient rotor heads, 45% water lost to wind spray &amp; runoff</div>
+              </div>
+            </div>
+            <div class="p-4 space-y-2">
+              <div class="text-xs font-bold text-slate-800 dark:text-neutral-200">The Problem:</div>
+              <ul class="text-[11px] text-slate-600 dark:text-neutral-400 space-y-1">
+                <li class="flex items-center gap-1.5"><i class="fa-solid fa-xmark text-rose-500"></i> Low head pressure causing yellow dry circles</li>
+                <li class="flex items-center gap-1.5"><i class="fa-solid fa-xmark text-rose-500"></i> High municipal water bills ($640+/month)</li>
+                <li class="flex items-center gap-1.5"><i class="fa-solid fa-xmark text-rose-500"></i> Hardscape overspray eroding driveway borders</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- AFTER CARD -->
+          <div id="after-card" class="rounded-2xl overflow-hidden border border-emerald-500/40 bg-emerald-50/10 dark:bg-emerald-950/10 flex flex-col justify-between group">
+            <div class="relative overflow-hidden aspect-[16/10]">
+              <img src="assets/images/home2-after.jpg" alt="Lawn After Smart Sprinkler Installation - Lush vibrant green estate lawn" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-emerald-600/90 text-white text-[11px] font-extrabold uppercase tracking-wide backdrop-blur-sm shadow">
+                <i class="fa-solid fa-check-double mr-1"></i> AFTER: 14 DAYS POST-INSTALL
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 p-2.5 rounded-xl bg-black/70 backdrop-blur-md text-white text-xs">
+                <div class="font-bold text-emerald-300">Flawless Golf-Course Grade Turf Uniformity</div>
+                <div class="text-[11px] text-slate-300">Full root saturation, matched precipitation rate, 42% water reduction</div>
+              </div>
+            </div>
+            <div class="p-4 space-y-2">
+              <div class="text-xs font-bold text-slate-800 dark:text-neutral-200">The GreenWave Solution:</div>
+              <ul class="text-[11px] text-slate-600 dark:text-neutral-400 space-y-1">
+                <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-500"></i> 14 precision MP Rotators with pressure regulation (PRS40)</li>
+                <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-500"></i> Hyper-local weather radar sync preventing rain-day runs</li>
+                <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-500"></i> Cut monthly water bills by $280/month immediately</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 4 Proven Transformation Numbers -->
+        <div class="mt-8 pt-6 border-t border-slate-100 dark:border-neutral-800 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div class="p-3 rounded-2xl bg-slate-50 dark:bg-[#121212]">
+            <div class="text-2xl sm:text-3xl font-heading font-black text-emerald-600 dark:text-emerald-400">14 Days</div>
+            <div class="text-[11px] text-slate-500 dark:text-neutral-400 font-semibold mt-0.5">Time to Full Green Recovery</div>
+          </div>
+          <div class="p-3 rounded-2xl bg-slate-50 dark:bg-[#121212]">
+            <div class="text-2xl sm:text-3xl font-heading font-black text-emerald-600 dark:text-emerald-400">-42%</div>
+            <div class="text-[11px] text-slate-500 dark:text-neutral-400 font-semibold mt-0.5">Monthly Water Gallon Reduction</div>
+          </div>
+          <div class="p-3 rounded-2xl bg-slate-50 dark:bg-[#121212]">
+            <div class="text-2xl sm:text-3xl font-heading font-black text-emerald-600 dark:text-emerald-400">0 Trenches</div>
+            <div class="text-[11px] text-slate-500 dark:text-neutral-400 font-semibold mt-0.5">Lawn Disruption or Scarring</div>
+          </div>
+          <div class="p-3 rounded-2xl bg-slate-50 dark:bg-[#121212]">
+            <div class="text-2xl sm:text-3xl font-heading font-black text-emerald-600 dark:text-emerald-400">100% MPR</div>
+            <div class="text-[11px] text-slate-500 dark:text-neutral-400 font-semibold mt-0.5">Matched Precipitation Rate</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 4: 4-STAGE SURGICAL INSTALLATION WORKFLOW
+       Engineering Methodology for Fine Grounds
+       ======================================================== -->
+  <section class="py-20 bg-white dark:bg-[#121212] border-b border-slate-200/80 dark:border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-400">OUR TRENCHLESS PROTOCOL</span>
+        <h2 class="text-2xl sm:text-3xl font-heading font-black text-slate-900 dark:text-white">
+          Surgical Installation with Zero Lawn Scarring
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-neutral-400">
+          We treat established estate turf like delicate carpet. Our modern vibratory insertion technology places pipe under roots without excavating open trenches.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Step 1 -->
+        <div class="bg-slate-50 dark:bg-[#181818] rounded-2xl p-6 border border-slate-200/80 dark:border-neutral-800 shadow-sm relative group hover:border-emerald-500/50 transition-all">
+          <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-extrabold text-sm flex items-center justify-center mb-4">
+            01
+          </div>
+          <h4 class="text-sm font-bold font-heading text-slate-900 dark:text-white mb-2">CAD Topo &amp; Pressure Audit</h4>
+          <p class="text-[11px] text-slate-600 dark:text-neutral-400 leading-relaxed">
+            We map dynamic flow (GPM) and static PSI across every zone to eliminate friction loss and pressure drops before pipe is laid.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-slate-50 dark:bg-[#181818] rounded-2xl p-6 border border-slate-200/80 dark:border-neutral-800 shadow-sm relative group hover:border-emerald-500/50 transition-all">
+          <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-extrabold text-sm flex items-center justify-center mb-4">
+            02
+          </div>
+          <h4 class="text-sm font-bold font-heading text-slate-900 dark:text-white mb-2">Vibratory Blade Insertion</h4>
+          <p class="text-[11px] text-slate-600 dark:text-neutral-400 leading-relaxed">
+            Heavy-duty oscillating vibratory plows pull flexible poly laterals 10 inches below the turf, leaving sod perfectly intact.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-slate-50 dark:bg-[#181818] rounded-2xl p-6 border border-slate-200/80 dark:border-neutral-800 shadow-sm relative group hover:border-emerald-500/50 transition-all">
+          <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-extrabold text-sm flex items-center justify-center mb-4">
+            03
+          </div>
+          <h4 class="text-sm font-bold font-heading text-slate-900 dark:text-white mb-2">Brass Manifold &amp; Solenoids</h4>
+          <p class="text-[11px] text-slate-600 dark:text-neutral-400 leading-relaxed">
+            Sub-surface valve vaults house heavy-duty commercial brass manifolds sealed with 100% waterproof silicone wire splices.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="bg-slate-50 dark:bg-[#181818] rounded-2xl p-6 border border-slate-200/80 dark:border-neutral-800 shadow-sm relative group hover:border-emerald-500/50 transition-all">
+          <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-extrabold text-sm flex items-center justify-center mb-4">
+            04
+          </div>
+          <h4 class="text-sm font-bold font-heading text-slate-900 dark:text-white mb-2">Laser Flow Calibration</h4>
+          <p class="text-[11px] text-slate-600 dark:text-neutral-400 leading-relaxed">
+            Every rotary nozzle is micro-adjusted to guarantee head-to-head coverage with crisp borders and zero overspray on masonry.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 5: ESTATE & ACREAGE CASE STUDIES
+       Distinct Real Estate Profiles (Unique Images)
+       ======================================================== -->
+  <section class="py-20 bg-slate-50 dark:bg-[#151515] border-b border-slate-200/80 dark:border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-left rtl:text-right mb-12 space-y-2">
+        <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 flex items-center gap-2">
+          <span class="w-6 h-0.5 bg-emerald-600 inline-block"></span>
+          ESTATE CASE STUDIES
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-heading font-black text-slate-900 dark:text-white">
+          Architectural Transformations in the Field
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- Case Study 1 -->
+        <div class="bg-white dark:bg-[#181818] rounded-3xl overflow-hidden border border-slate-200/80 dark:border-neutral-800 shadow-lg flex flex-col justify-between">
+          <div>
+            <div class="relative h-64 sm:h-72 w-full overflow-hidden">
+              <img src="assets/images/home2-estate.jpg" alt="Westlake Hills 2.5-Acre Private Estate Sprinkler Architecture" class="w-full h-full object-cover">
+              <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-emerald-400 text-xs font-bold border border-white/10">
+                Westlake Hills &bull; 2.5-Acre Estate
+              </div>
+            </div>
+            <div class="p-6 sm:p-8 space-y-4">
+              <h3 class="text-xl font-heading font-bold text-slate-900 dark:text-white">
+                Multi-Tier Slope &amp; Ancient Oak Canopy Protection
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-neutral-300 leading-relaxed">
+                A steep hillside estate required precision watering for fine Zoysia lawn while protecting historic oak root zones from over-saturation. We engineered a 14-zone pressure-regulated system with subsurface drip lines around delicate ornamental beds.
+              </p>
+              
+              <!-- Metrics Strip -->
+              <div class="grid grid-cols-3 gap-3 pt-3 border-t border-slate-100 dark:border-neutral-800 text-center">
+                <div>
+                  <div class="text-base sm:text-lg font-bold text-emerald-600 dark:text-emerald-400 font-heading">14 Zones</div>
+                  <div class="text-[10px] text-slate-400">Micro-Climate Controlled</div>
+                </div>
+                <div>
+                  <div class="text-base sm:text-lg font-bold text-emerald-600 dark:text-emerald-400 font-heading">-46% Water</div>
+                  <div class="text-[10px] text-slate-400">$380/mo Tariff Cut</div>
+                </div>
+                <div>
+                  <div class="text-base sm:text-lg font-bold text-emerald-600 dark:text-emerald-400 font-heading">0 Scarring</div>
+                  <div class="text-[10px] text-slate-400">Turf Pristine Post-Install</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-0">
+            <a href="gallery.html" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-600 hover:text-emerald-700 dark:hover:text-emerald-400">
+              <span>View Full Project Specs</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="bg-white dark:bg-[#181818] rounded-3xl overflow-hidden border border-slate-200/80 dark:border-neutral-800 shadow-lg flex flex-col justify-between">
+          <div>
+            <div class="relative h-64 sm:h-72 w-full overflow-hidden">
+              <img src="assets/images/home2-commercial.jpg" alt="Barton Creek Executive Grounds &amp; HOA Irrigation System" class="w-full h-full object-cover">
+              <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-emerald-400 text-xs font-bold border border-white/10">
+                Barton Creek &bull; 4-Acre Grounds
+              </div>
+            </div>
+            <div class="p-6 sm:p-8 space-y-4">
+              <h3 class="text-xl font-heading font-bold text-slate-900 dark:text-white">
+                Commercial-Grade Master Valve &amp; Flow Telemetry
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-neutral-300 leading-relaxed">
+                Expansive athletic lawn and shared event grounds required synchronized high-volume watering within a tight 3:00 AM &ndash; 6:00 AM window. We installed heavy-duty brass master valves, ultrasonic meters, and 3-zone satellite weather coordination.
+              </p>
+              
+              <!-- Metrics Strip -->
+              <div class="grid grid-cols-3 gap-3 pt-3 border-t border-slate-100 dark:border-neutral-800 text-center">
+                <div>
+                  <div class="text-base sm:text-lg font-bold text-emerald-600 dark:text-emerald-400 font-heading">22 Zones</div>
+                  <div class="text-[10px] text-slate-400">Commercial Heavy-Duty</div>
+                </div>
+                <div>
+                  <div class="text-base sm:text-lg font-bold text-emerald-600 dark:text-emerald-400 font-heading">0.5 GPM</div>
+                  <div class="text-[10px] text-slate-400">Leak Detection Auto-Cut</div>
+                </div>
+                <div>
+                  <div class="text-base sm:text-lg font-bold text-emerald-600 dark:text-emerald-400 font-heading">3 Days</div>
+                  <div class="text-[10px] text-slate-400">Turnaround Time</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-0">
+            <a href="gallery.html" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-600 hover:text-emerald-700 dark:hover:text-emerald-400">
+              <span>View Full Project Specs</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 6: ABOUT OUR ENGINEERING RIGOR
+       With Unique Architecture Image
+       ======================================================== -->
+  <section class="py-20 bg-white dark:bg-[#121212] border-b border-slate-200 dark:border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Side: Large Photo with 15+ Years Experience Badge -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200/80 dark:border-neutral-800 bg-[#f1f5f9] dark:bg-[#121212]">
+            <img src="assets/images/home2-architecture.jpg" alt="Architectural Residence with Emerald Green Irrigated Lawn" class="w-full h-80 sm:h-96 lg:h-[420px] object-cover">
+            
+            <!-- Floating Badge: 15+ Years of Experience -->
+            <div class="absolute bottom-6 left-6 bg-white dark:bg-[#121212] rounded-2xl p-4 shadow-xl border border-slate-200 dark:border-neutral-800 flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-full bg-emerald-600 text-white flex items-center justify-center text-lg shrink-0">
+                <i class="fa-solid fa-leaf text-emerald-400"></i>
+              </div>
+              <div>
+                <div class="text-2xl font-black font-heading text-slate-900 dark:text-white leading-none">15+</div>
+                <div class="text-[11px] text-slate-500 dark:text-slate-400 font-bold mt-1">Years Hydraulic Mastery</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Narrative & 3 Metrics -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 flex items-center gap-2">
+            <span class="w-6 h-0.5 bg-emerald-600 inline-block"></span>
+            MASTER IRRIGATOR STANDARDS
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-heading font-black text-slate-900 dark:text-white leading-[1.2]">
+            Hydraulic Science for<br>Demanding Landscapes
+          </h2>
+
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-neutral-300 leading-relaxed">
+            Unlike landscapers who treat sprinklers as an afterthought, GreenWave is a specialized irrigation engineering firm. Every nozzle arc, pipe diameter, and manifold layout is designed by licensed irrigators using matched precipitation formulas to eliminate wet soggy patches and brown drought stress.
+          </p>
+
+          <!-- 3 Stats Columns -->
+          <div class="pt-4 grid grid-cols-3 gap-3 border-t border-slate-200/80 dark:border-neutral-800 text-left rtl:text-right">
+            <div class="pr-2 border-r border-slate-200/80 dark:border-neutral-800">
+              <div class="text-2xl sm:text-3xl font-heading font-black text-slate-900 dark:text-white leading-none">500+</div>
+              <div class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium mt-1">Estates Engineered</div>
+            </div>
+
+            <div class="px-2 border-r border-slate-200/80 dark:border-neutral-800">
+              <div class="text-2xl sm:text-3xl font-heading font-black text-slate-900 dark:text-white leading-none">1.2M</div>
+              <div class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium mt-1">Gallons Conserved</div>
+            </div>
+
+            <div class="pl-2">
+              <div class="text-2xl sm:text-3xl font-heading font-black text-slate-900 dark:text-white leading-none">5-Year</div>
+              <div class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium mt-1">Complete Warranty</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ========================================================
+       SECTION: WHY CHOOSE US - 5 PILLARS OF HYDRAULIC EXCELLENCE
+       Fully Detailed Cards (Customized Solutions, On-Time Completion, Quality Materials, Experienced Team, Ongoing Support)
+       ======================================================== -->
+  <section class="py-20 bg-white dark:bg-[#121212] border-b border-slate-200/80 dark:border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+          <i class="fa-solid fa-award"></i>
+          <span>WHY CHOOSE US &bull; MASTER-GRADE RELIABILITY</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-heading font-black text-slate-900 dark:text-white">
+          The Right Choice for Your Irrigation Needs
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-neutral-300 leading-relaxed max-w-2xl mx-auto">
+          Every project is engineered with surgical hydraulic accuracy, commercial-grade components, and unmatched long-term accountability. Here is why homeowners and estate managers trust GreenWave:
+        </p>
+      </div>
+
+      <!-- 5 Fully Detailed Engineering Pillar Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6 items-stretch">
+        
+        <!-- Pillar 1: Customized Solutions -->
+        <div class="bg-slate-50 dark:bg-[#181818] rounded-2xl p-6 border border-slate-200/80 dark:border-neutral-800 shadow-sm flex flex-col justify-between card-hover-lift hover:border-emerald-500/50 transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 flex items-center justify-center text-lg shadow-sm group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">CAD Zoned</span>
+            </div>
+            
+            <h4 class="text-base font-bold font-heading text-slate-900 dark:text-white mb-1">Customized Solutions</h4>
+            <div class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 mb-2">Soil-Matched Hydraulic Design</div>
+            
+            <p class="text-xs text-slate-600 dark:text-neutral-300 leading-relaxed mb-4">
+              We analyze soil percolation, terrain slope, and sun exposure to design custom CAD zone blueprints that eliminate runoff and ensure uniform root saturation.
+            </p>
+            
+            <ul class="space-y-1.5 pt-3 border-t border-slate-200/60 dark:border-neutral-800 text-[11px] text-slate-600 dark:text-neutral-300">
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>Micro-climate sun &amp; shade hydrozoning</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>Zero overspray onto fences &amp; masonry</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>Matched Precipitation Rate (MPR) calibration</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="mt-5 pt-3 border-t border-slate-200/60 dark:border-neutral-800 text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+            100% Site-Specific Engineering
+          </div>
+        </div>
+
+        <!-- Pillar 2: On-Time Completion -->
+        <div class="bg-slate-50 dark:bg-[#181818] rounded-2xl p-6 border border-slate-200/80 dark:border-neutral-800 shadow-sm flex flex-col justify-between card-hover-lift hover:border-emerald-500/50 transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 flex items-center justify-center text-lg shadow-sm group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">Guaranteed</span>
+            </div>
+            
+            <h4 class="text-base font-bold font-heading text-slate-900 dark:text-white mb-1">On-Time Completion</h4>
+            <div class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 mb-2">Locked 2-Hour Arrival Windows</div>
+            
+            <p class="text-xs text-slate-600 dark:text-neutral-300 leading-relaxed mb-4">
+              We respect your busy schedule with confirmed arrival windows and high-speed vibratory plow equipment that completes full installations in 48 to 72 hours.
+            </p>
+            
+            <ul class="space-y-1.5 pt-3 border-t border-slate-200/60 dark:border-neutral-800 text-[11px] text-slate-600 dark:text-neutral-300">
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>Strict 2-hour confirmed arrival windows</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>48 to 72-hour full turnaround guarantee</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>Complete same-day cleanup &amp; sod restore</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="mt-5 pt-3 border-t border-slate-200/60 dark:border-neutral-800 text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+            99.4% On-Schedule Track Record
+          </div>
+        </div>
+
+        <!-- Pillar 3: Quality Materials -->
+        <div class="bg-slate-50 dark:bg-[#181818] rounded-2xl p-6 border border-slate-200/80 dark:border-neutral-800 shadow-sm flex flex-col justify-between card-hover-lift hover:border-emerald-500/50 transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 flex items-center justify-center text-lg shadow-sm group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">Commercial</span>
+            </div>
+            
+            <h4 class="text-base font-bold font-heading text-slate-900 dark:text-white mb-1">Quality Materials</h4>
+            <div class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 mb-2">Rain Bird® &amp; Hunter® Spec</div>
+            
+            <p class="text-xs text-slate-600 dark:text-neutral-300 leading-relaxed mb-4">
+              Zero cheap box-store plastics. We exclusively install commercial brass master valves, 45 PSI pressure-regulated bodies (PRS40), and industrial poly laterals.
+            </p>
+            
+            <ul class="space-y-1.5 pt-3 border-t border-slate-200/60 dark:border-neutral-800 text-[11px] text-slate-600 dark:text-neutral-300">
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>Rain Bird® 5000 PRS &amp; Hunter® MP Rotators</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>Commercial brass solenoid valves (85+ PSI)</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>Waterproof silicone gel wire connections</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="mt-5 pt-3 border-t border-slate-200/60 dark:border-neutral-800 text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+            Commercial-Grade Hardware Only
+          </div>
+        </div>
+
+        <!-- Pillar 4: Experienced Team -->
+        <div class="bg-slate-50 dark:bg-[#181818] rounded-2xl p-6 border border-slate-200/80 dark:border-neutral-800 shadow-sm flex flex-col justify-between card-hover-lift hover:border-emerald-500/50 transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 flex items-center justify-center text-lg shadow-sm group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-user-group"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">Licensed</span>
+            </div>
+            
+            <h4 class="text-base font-bold font-heading text-slate-900 dark:text-white mb-1">Experienced Team</h4>
+            <div class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 mb-2">Master Irrigators &amp; Certified Techs</div>
+            
+            <p class="text-xs text-slate-600 dark:text-neutral-300 leading-relaxed mb-4">
+              Every installation crew is led by a State-Licensed Master Irrigator with 15+ years of hydraulic mastery. We maintain 100% W2 in-house crews with zero subcontractors.
+            </p>
+            
+            <ul class="space-y-1.5 pt-3 border-t border-slate-200/60 dark:border-neutral-800 text-[11px] text-slate-600 dark:text-neutral-300">
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>Texas Master Irrigator Lic. #LI-982341</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>EPA WaterSense® Certified Partner</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>100% in-house staff &mdash; zero subcontractors</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="mt-5 pt-3 border-t border-slate-200/60 dark:border-neutral-800 text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+            15+ Years Hydraulic Leadership
+          </div>
+        </div>
+
+        <!-- Pillar 5: Ongoing Support -->
+        <div class="bg-slate-50 dark:bg-[#181818] rounded-2xl p-6 border border-slate-200/80 dark:border-neutral-800 shadow-sm flex flex-col justify-between card-hover-lift hover:border-emerald-500/50 transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 flex items-center justify-center text-lg shadow-sm group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">5-Yr Warranty</span>
+            </div>
+            
+            <h4 class="text-base font-bold font-heading text-slate-900 dark:text-white mb-1">Ongoing Support</h4>
+            <div class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 mb-2">Long-Term Maintenance &amp; Care</div>
+            
+            <p class="text-xs text-slate-600 dark:text-neutral-300 leading-relaxed mb-4">
+              Our relationship begins on delivery day. We provide an industry-leading 5-year bumper-to-bumper warranty, seasonal winterization blowouts, and 24/7 hotline support.
+            </p>
+            
+            <ul class="space-y-1.5 pt-3 border-t border-slate-200/60 dark:border-neutral-800 text-[11px] text-slate-600 dark:text-neutral-300">
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>5-year full parts &amp; craftsmanship warranty</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>Priority winterization &amp; spring startup slots</span>
+              </li>
+              <li class="flex items-start gap-1.5">
+                <i class="fa-solid fa-check text-emerald-500 text-xs mt-0.5 shrink-0"></i>
+                <span>24/7 emergency leak &amp; backflow hotline</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="mt-5 pt-3 border-t border-slate-200/60 dark:border-neutral-800 text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+            Dedicated Lifetime Care Partner
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 7: INTERACTIVE WATER & COST SAVINGS CALCULATOR
+       Live Slider for Estate Acreage & Subsurface Efficiency
+       ======================================================== -->
+  <section class="py-20 bg-slate-50 dark:bg-[#151515] border-b border-slate-200 dark:border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-[#0a2319] via-[#0f172a] to-[#0a1612] rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden border border-emerald-500/20">
+        <div class="absolute -right-16 -top-16 w-80 h-80 bg-emerald-500/10 rounded-full blur-2xl"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+          <div class="lg:col-span-6 space-y-4">
+            <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              ESTATE EFFICIENCY SIMULATOR
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-heading font-black text-white">Calculate Your Water &amp; Cost Savings</h2>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Moving from conventional fixed spray heads to pressure-regulated MP Rotators and weather-radar controllers drastically reduces runoff on large lawns. Move the slider to calculate your impact:
+            </p>
+
+            <div class="space-y-4 pt-3">
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-2">
+                  <span>Estimated Lawn Area:</span>
+                  <span id="calc-lawn-display" class="text-emerald-400 font-bold text-sm">5,000 sq ft</span>
+                </div>
+                <input id="calc-lawn-size" type="range" min="1000" max="25000" step="500" value="5000" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-emerald-500">
+                <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+                  <span>1,000 sq ft</span>
+                  <span>12,500 sq ft (~0.3 Acre)</span>
+                  <span>25,000+ sq ft (~0.6 Acre)</span>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold mb-1 text-slate-300">System Architecture Level:</label>
+                <select id="calc-system-type" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
+                  <option value="smart-rotor">Smart MP Rotators &amp; Rain Sensor (35% Savings)</option>
+                  <option value="smart-drip">Estate Multi-Zone &amp; Subsurface Precision Drip (45% Savings)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Output Cards -->
+          <div class="lg:col-span-6 bg-slate-800/80 border border-slate-700 rounded-3xl p-6 sm:p-8 backdrop-blur-md">
+            <h3 class="text-sm font-bold font-heading mb-5 flex items-center gap-2 text-white">
+              <i class="fa-solid fa-calculator text-emerald-400"></i> Projected Annual Estate Impact
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-slate-900/90 rounded-2xl p-5 border border-slate-700/80 text-center">
+                <div class="text-[11px] text-slate-400 uppercase font-bold">Annual Water Saved</div>
+                <div id="calc-water-saved" class="text-3xl font-heading font-black text-emerald-400 mt-1.5">38,500 gal</div>
+                <div class="text-[10px] text-slate-400 mt-1">Equal to 1,280 showers</div>
+              </div>
+
+              <div class="bg-slate-900/90 rounded-2xl p-5 border border-slate-700/80 text-center">
+                <div class="text-[11px] text-slate-400 uppercase font-bold">Utility Bill Reduction</div>
+                <div id="calc-money-saved" class="text-3xl font-heading font-black text-cyan-400 mt-1.5">$332</div>
+                <div class="text-[10px] text-slate-400 mt-1">Standard municipal rates</div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-700/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div class="text-[11px] text-slate-300 text-center sm:text-left rtl:sm:text-right">
+                *Includes municipal water district rebate qualification assistance.
+              </div>
+              <a href="contact.html" data-open-quote class="w-full sm:w-auto px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs text-center transition-colors shadow-md">
+                Claim Rebate Assessment
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 8: MID-PAGE CALLOUT BANNER (cta-lawn.jpg)
+       ======================================================== -->
+  <section class="relative py-20 sm:py-24 overflow-hidden bg-slate-900">
+    <img src="assets/images/cta-lawn.jpg" alt="Lush Lawn with Sunbeams" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-slate-950/70"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+        
+        <!-- Left Side: Title, Text, CTA -->
+        <div class="max-w-xl text-center lg:text-left rtl:lg:text-right space-y-4">
+          <h2 class="text-3xl sm:text-4xl font-heading font-black text-white leading-tight">
+            Protect Your Estate Investment with Master-Grade Irrigation
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+            Request an in-depth hydraulic evaluation today. Our licensed irrigators will assess dynamic water volume, water pressure, soil absorption, and custom zoning options.
+          </p>
+          <div class="pt-2">
+            <a href="contact.html" data-open-quote class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white hover:bg-[#f1f5f9] text-emerald-700 font-black text-xs transition-all shadow-xl">
+              <span>Schedule Free Estate Assessment</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Frosted Glass Card -->
+        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-7 shadow-2xl flex items-center gap-5 text-white">
+          <div class="w-14 h-14 rounded-full bg-emerald-500/25 flex items-center justify-center text-emerald-300 text-2xl shrink-0 border border-emerald-400/30">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <div class="text-lg sm:text-xl font-black font-heading leading-tight space-y-0.5">
+            <div>Conserve Water</div>
+            <div>Eliminate Runoff</div>
+            <div class="text-emerald-300 flex items-center gap-1.5">
+              <span>Pristine Grounds</span>
+              <i class="fa-solid fa-leaf text-sm text-emerald-400"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 9: VERIFIED CUSTOMER REVIEWS
+       Distinct Testimonial Avatars (customer-1, 2, 3)
+       ======================================================== -->
+  <section class="py-20 bg-white dark:bg-[#121212] border-b border-slate-200 dark:border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-left rtl:text-right mb-12 space-y-2">
+        <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 flex items-center gap-2">
+          <span class="w-6 h-0.5 bg-emerald-600 inline-block"></span>
+          VERIFIED REVIEWS
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-heading font-black text-slate-900 dark:text-white">
+          What Estate Owners Say
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+        
+        <!-- Testimonial 1 -->
+        <div class="bg-slate-50 dark:bg-[#181818] rounded-2xl p-6 border border-slate-200/80 dark:border-neutral-800 shadow-sm flex flex-col justify-between h-full card-hover-lift">
+          <div class="flex items-start gap-4 mb-4">
+            <img src="assets/images/customer-7.jpg" alt="James T." class="w-12 h-12 rounded-full object-cover shrink-0 ring-2 ring-emerald-500/20">
+            <div class="space-y-1">
+              <span class="font-bold text-sm text-slate-900 dark:text-white block">James T.</span>
+              <div class="flex text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-neutral-300 leading-relaxed font-normal italic flex-1">
+            &ldquo;Their vibratory plow installation was astonishing. Our yard wasn't torn up or scarred at all, and the new multi-zone coverage eliminated every dry spot on our 2.5-acre property.&rdquo;
+          </p>
+          <div class="pt-4 border-t border-slate-200/60 dark:border-neutral-800 mt-4 text-[11px] text-slate-400">
+            2.5-Acre Private Estate &bull; Westlake Hills, TX
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-slate-50 dark:bg-[#181818] rounded-2xl p-6 border border-slate-200/80 dark:border-neutral-800 shadow-sm flex flex-col justify-between h-full card-hover-lift">
+          <div class="flex items-start gap-4 mb-4">
+            <img src="assets/images/customer-8.jpg" alt="Priya S." class="w-12 h-12 rounded-full object-cover shrink-0 ring-2 ring-emerald-500/20">
+            <div class="space-y-1">
+              <span class="font-bold text-sm text-slate-900 dark:text-white block">Priya S.</span>
+              <div class="flex text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-neutral-300 leading-relaxed font-normal italic flex-1">
+            &ldquo;The subsurface drip network for our botanical beds combined with the smart radar controller saved us over $340 every month on water bills during the peak heat wave.&rdquo;
+          </p>
+          <div class="pt-4 border-t border-slate-200/60 dark:border-neutral-800 mt-4 text-[11px] text-slate-400">
+            Botanical Grounds &bull; Barton Creek, TX
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-slate-50 dark:bg-[#181818] rounded-2xl p-6 border border-slate-200/80 dark:border-neutral-800 shadow-sm flex flex-col justify-between h-full card-hover-lift">
+          <div class="flex items-start gap-4 mb-4">
+            <img src="assets/images/customer-9.jpg" alt="Michael R." class="w-12 h-12 rounded-full object-cover shrink-0 ring-2 ring-emerald-500/20">
+            <div class="space-y-1">
+              <span class="font-bold text-sm text-slate-900 dark:text-white block">Michael R.</span>
+              <div class="flex text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-neutral-300 leading-relaxed font-normal italic flex-1">
+            &ldquo;Top-notch hydraulic engineering. The commercial brass manifold and ultrasonic flow sensors provide complete peace of mind that a pipe burst won't flood our grounds.&rdquo;
+          </p>
+          <div class="pt-4 border-t border-slate-200/60 dark:border-neutral-800 mt-4 text-[11px] text-slate-400">
+            Commercial Turf &amp; Residence &bull; Austin, TX
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       ENTERPRISE MULTI-COLUMN DARK SLATE FOOTER
+       Zero Navy Blue - Pure Obsidian Dark Slate Palette
+       ======================================================== -->
+  <footer class="bg-[#0f0f10] text-slate-300 text-xs pt-16 pb-12 border-t border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 pb-12 border-b border-neutral-800">
+        
+        <!-- Col 1: Brand & Credentials (4 cols) -->
+        <div class="lg:col-span-4 space-y-5">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/logo-greenwave-white.svg" alt="GreenWave Smart Sprinklers" class="h-9 w-auto">
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed max-w-sm">
+            Central Texas leader in water-conserving smart sprinkler systems, dynamic CAD hydraulic blueprints, satellite radar automation, and zero-lawn-tear trenchless installations.
+          </p>
+
+          <!-- Social Media Profiles -->
+          <div class="flex items-center gap-2.5 pt-1">
+            <a href="#" aria-label="Facebook" class="w-8 h-8 rounded-full bg-[#1c1c1c] hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-all border border-neutral-800 hover:border-emerald-500 shadow-sm"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+            <a href="#" aria-label="Instagram" class="w-8 h-8 rounded-full bg-[#1c1c1c] hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-all border border-neutral-800 hover:border-emerald-500 shadow-sm"><i class="fa-brands fa-instagram text-xs"></i></a>
+            <a href="#" aria-label="LinkedIn" class="w-8 h-8 rounded-full bg-[#1c1c1c] hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-all border border-neutral-800 hover:border-emerald-500 shadow-sm"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+            <a href="#" aria-label="YouTube" class="w-8 h-8 rounded-full bg-[#1c1c1c] hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-all border border-neutral-800 hover:border-emerald-500 shadow-sm"><i class="fa-brands fa-youtube text-xs"></i></a>
+          </div>
+
+          <!-- Trust & Licensing Chips -->
+          <div class="pt-1 flex flex-col gap-2 text-[11px]">
+            <div class="text-emerald-400 font-semibold flex items-center gap-2">
+              <i class="fa-solid fa-shield-halved text-xs text-emerald-400"></i>
+              <span>Texas Licensed Master Irrigator #LI-982341</span>
+            </div>
+            <div class="text-slate-300 flex items-center gap-2">
+              <i class="fa-solid fa-droplet text-teal-400 text-xs"></i>
+              <span>EPA WaterSense® Certified Partner</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links (2 cols) -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-3.5 rounded-full bg-emerald-500"></span>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white font-heading">Navigation</h4>
+          </div>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="index.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>Home</span></a></li>
+            <li><a href="faq.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>Help &amp; FAQ</span></a></li>
+            <li><a href="about.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>About Us</span></a></li>
+            <li><a href="services.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>All Services</span></a></li>
+            <li><a href="pricing.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>Pricing &amp; ROI</span></a></li>
+            <li><a href="gallery.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>Project Gallery</span></a></li>
+            <li><a href="contact.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>Contact &amp; Map</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Irrigation Services (3 cols) -->
+        <div class="lg:col-span-3 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-3.5 rounded-full bg-emerald-500"></span>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white font-heading">Services</h4>
+          </div>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="service-details.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>Smart Sprinkler Install</span></a></li>
+            <li><a href="service-smart-controllers.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>Smart WiFi Controllers</span></a></li>
+            <li><a href="service-drip-irrigation.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>Subsurface Drip Networks</span></a></li>
+            <li><a href="service-commercial-turf.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>Commercial &amp; HOA Turf</span></a></li>
+            <li><a href="service-winterization.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>Winterization Blowouts</span></a></li>
+            <li><a href="service-leak-repair.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>Emergency Leak Repairs</span></a></li>
+            <li><a href="service-hydraulic-audit.html" class="footer-link-item"><i class="fa-solid fa-chevron-right text-[8px] text-emerald-400"></i><span>12-Point System Audit</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Direct Contact & Headquarters (3 cols) -->
+        <div class="lg:col-span-3 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-3.5 rounded-full bg-emerald-500"></span>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white font-heading">Direct Contact</h4>
+          </div>
+          
+          <div class="space-y-3 text-xs">
+            <!-- Phone -->
+            <a href="tel:5553829283" class="footer-contact-card p-3 rounded-xl flex items-center gap-3 group block">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-phone text-xs"></i>
+              </div>
+              <div>
+                <div class="text-[10px] uppercase font-bold text-slate-400">24/7 Dispatch Hotline</div>
+                <div class="text-white font-extrabold group-hover:text-emerald-400 transition-colors">(555) 382-9283</div>
+              </div>
+            </a>
+            
+            <!-- Email -->
+            <a href="mailto:service@greenwaveirrigation.com" class="footer-contact-card p-3 rounded-xl flex items-center gap-3 group block">
+              <div class="w-8 h-8 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-envelope text-xs"></i>
+              </div>
+              <div class="min-w-0">
+                <div class="text-[10px] uppercase font-bold text-slate-400">Engineering Office</div>
+                <div class="text-slate-200 font-bold text-[11px] truncate group-hover:text-emerald-400 transition-colors">service@greenwaveirrigation.com</div>
+              </div>
+            </a>
+
+            <!-- Address & Map -->
+            <a href="contact.html#coverage-map" class="footer-contact-card p-3 rounded-xl flex items-center gap-3 group block">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-location-dot text-xs"></i>
+              </div>
+              <div>
+                <div class="text-[10px] uppercase font-bold text-slate-400">Austin Headquarters</div>
+                <div class="text-slate-200 font-bold text-[11px] group-hover:text-emerald-400 transition-colors">123 Green Lane, Suite 300, Austin, TX 78704 <span class="text-emerald-400 font-semibold">(View Map)</span></div>
+              </div>
+            </a>
+
+            <!-- Hours -->
+            <div class="flex items-center gap-2 pt-1 text-[11px] text-slate-400">
+              <i class="fa-solid fa-clock text-emerald-400 text-xs shrink-0"></i>
+              <span>Mon - Sat: 7:00 AM - 7:00 PM (Emergency 24/7)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <div class="text-center sm:text-left text-slate-400">
+          &copy; 2026 GreenWave Smart Sprinkler &amp; Irrigation Systems LLC. All rights reserved.
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-6 text-slate-300 font-medium">
+          <a href="terms.html" class="hover:text-emerald-400 transition-colors">Warranty &amp; Terms</a>
+          <a href="faq.html" class="hover:text-emerald-400 transition-colors">Help Center</a>
+          <a href="contact.html#coverage-map" class="hover:text-emerald-400 transition-colors">Service Area Map</a>
+          <a href="contact.html" class="hover:text-emerald-400 transition-colors">Emergency Support</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       VIDEO SHOWCASE MODAL
+       Unique Image hero-contractor.jpg (Crew & Vibratory Machine)
+       ======================================================== -->
+  <div id="video-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-slate-900 rounded-3xl max-w-2xl w-full p-6 shadow-2xl border border-neutral-800 relative text-white">
+      <button id="close-video-btn" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div class="mb-4">
+        <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-400">Trenchless Technology in Action</span>
+        <h3 class="text-xl font-heading font-black text-white mt-1">Zero-Trench Vibratory Installation Process</h3>
+        <p class="text-xs text-slate-400 mt-1">Watch our certified crew insert sub-turf poly laterals with zero excavation damage to fine lawn turf.</p>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden aspect-video bg-black flex items-center justify-center group">
+        <img src="assets/images/home2-crew.jpg" alt="Irrigation Installation Crew with Vibratory Plow Equipment" class="w-full h-full object-cover opacity-75">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div id="play-video-trigger" class="w-16 h-16 rounded-full bg-emerald-600 text-white flex items-center justify-center text-2xl shadow-xl hover:scale-110 transition-transform cursor-pointer">
+            <i class="fa-solid fa-play ml-1"></i>
+          </div>
+        </div>
+        <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-slate-300">
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-video text-emerald-400"></i> 4K Field Footage &bull; Westlake Hills Project</span>
+          <span class="bg-black/60 px-2 py-0.5 rounded text-[10px] text-emerald-400 font-bold">2:45 HD</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Interactive Controls Script -->
+  <script>
+    // 1. Before & After View Toggle Handlers
+    const splitBtn = document.getElementById('view-split-btn');
+    const beforeBtn = document.getElementById('view-before-btn');
+    const afterBtn = document.getElementById('view-after-btn');
+    const beforeCard = document.getElementById('before-card');
+    const afterCard = document.getElementById('after-card');
+    const comparisonContainer = document.getElementById('comparison-container');
+
+    function resetViewButtons() {
+      [splitBtn, beforeBtn, afterBtn].forEach(b => {
+        b.className = 'px-3 py-1 rounded-lg text-xs font-bold text-slate-600 dark:text-neutral-300 hover:text-slate-900 transition-all';
+      });
+    }
+
+    if (splitBtn && beforeBtn && afterBtn && beforeCard && afterCard) {
+      splitBtn.addEventListener('click', () => {
+        resetViewButtons();
+        splitBtn.className = 'px-3 py-1 rounded-lg text-xs font-bold bg-white dark:bg-emerald-600 text-slate-900 dark:text-white shadow-sm transition-all';
+        beforeCard.classList.remove('hidden');
+        afterCard.classList.remove('hidden');
+        comparisonContainer.className = 'grid grid-cols-1 lg:grid-cols-2 gap-6 pt-6 items-stretch';
+      });
+
+      beforeBtn.addEventListener('click', () => {
+        resetViewButtons();
+        beforeBtn.className = 'px-3 py-1 rounded-lg text-xs font-bold bg-white dark:bg-emerald-600 text-slate-900 dark:text-white shadow-sm transition-all';
+        beforeCard.classList.remove('hidden');
+        afterCard.classList.add('hidden');
+        comparisonContainer.className = 'grid grid-cols-1 gap-6 pt-6 max-w-2xl mx-auto';
+      });
+
+      afterBtn.addEventListener('click', () => {
+        resetViewButtons();
+        afterBtn.className = 'px-3 py-1 rounded-lg text-xs font-bold bg-white dark:bg-emerald-600 text-slate-900 dark:text-white shadow-sm transition-all';
+        beforeCard.classList.add('hidden');
+        afterCard.classList.remove('hidden');
+        comparisonContainer.className = 'grid grid-cols-1 gap-6 pt-6 max-w-2xl mx-auto';
+      });
+    }
+
+    // 2. Video Modal Handlers
+    const heroWatchBtn = document.getElementById('hero-watch-btn');
+    const watchVideoBtn = document.getElementById('watch-video-btn');
+    const videoModal = document.getElementById('video-modal');
+    const closeVideoBtn = document.getElementById('close-video-btn');
+    const playVideoTrigger = document.getElementById('play-video-trigger');
+
+    function openVideoModal() {
+      if (videoModal) {
+        videoModal.classList.remove('hidden');
+        videoModal.classList.add('flex');
+        document.body.classList.add('overflow-hidden');
+      }
+    }
+
+    function closeVideoModal() {
+      if (videoModal) {
+        videoModal.classList.add('hidden');
+        videoModal.classList.remove('flex');
+        document.body.classList.remove('overflow-hidden');
+      }
+    }
+
+    if (watchVideoBtn) {
+      watchVideoBtn.addEventListener('click', openVideoModal);
+    }
+    if (closeVideoBtn) {
+      closeVideoBtn.addEventListener('click', closeVideoModal);
+    }
+    if (videoModal) {
+      videoModal.addEventListener('click', (e) => {
+        if (e.target === videoModal) closeVideoModal();
+      });
+    }
+    if (playVideoTrigger) {
+      playVideoTrigger.addEventListener('click', () => {
+        alert('GreenWave: Streaming 4K Trenchless Vibratory Installation Field Footage...');
+      });
+    }
+
+    // 3. Interactive Lawn Area & ROI Simulator
+    const lawnSlider = document.getElementById('calc-lawn-size');
+    const lawnDisplay = document.getElementById('calc-lawn-display');
+    const systemType = document.getElementById('calc-system-type');
+    const waterSavedEl = document.getElementById('calc-water-saved');
+    const moneySavedEl = document.getElementById('calc-money-saved');
+
+    function updateCalculator() {
+      if (!lawnSlider || !waterSavedEl || !moneySavedEl) return;
+      const sqft = parseInt(lawnSlider.value);
+      lawnDisplay.textContent = Number(sqft).toLocaleString() + ' sq ft';
+
+      const isDrip = systemType && systemType.value === 'smart-drip';
+      // Baseline calculation: 7.7 gallons per sq ft saved annually with smart rotors, 9.9 with drip
+      const rate = isDrip ? 9.9 : 7.7;
+      const waterSaved = Math.round(sqft * rate);
+      // Average municipal tiered rate: $8.60 per 1,000 gallons
+      const moneySaved = Math.round((waterSaved / 1000) * 8.62);
+
+      waterSavedEl.textContent = Number(waterSaved).toLocaleString() + ' gal';
+      moneySavedEl.textContent = '$' + Number(moneySaved).toLocaleString();
+    }
+
+    if (lawnSlider) {
+      lawnSlider.addEventListener('input', updateCalculator);
+    }
+    if (systemType) {
+      systemType.addEventListener('change', updateCalculator);
+    }
+    updateCalculator();
+  </script>
+</body>
+</html>
