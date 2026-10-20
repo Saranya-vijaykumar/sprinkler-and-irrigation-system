@@ -177,26 +177,34 @@
     </div>
   </div>
 
-  <!-- Page Breadcrumbs Banner -->
-  <section class="bg-gradient-to-r from-[#121212] via-emerald-950 to-[#121212] text-white py-14">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
-      <div class="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+  <!-- Page Header Hero Banner -->
+  <section class="relative min-h-[440px] flex items-center justify-center overflow-hidden bg-[#111111] py-16 lg:py-24 border-b border-neutral-800">
+    <!-- Panoramic Architectural Background Image -->
+    <img src="assets/images/service-sprinkler.jpg" alt="Turnkey Smart Sprinkler &amp; Irrigation Installation" class="absolute inset-0 w-full h-full object-cover object-center filter contrast-[1.08] brightness-75">
+    
+    <!-- Sophisticated Progressive Gradient Overlays -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/95 via-black/80 to-black/70 dark:from-[#0c1819]/98 dark:via-[#0c1819]/85 dark:to-[#0c1819]/70"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/40"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-4">
+      <div class="flex items-center justify-center gap-2 text-xs font-semibold text-emerald-400">
         <a href="index.html" class="hover:underline">Home</a>
         <i class="fa-solid fa-chevron-right text-[10px]"></i>
         <a href="services.html" class="hover:underline">Services</a>
         <i class="fa-solid fa-chevron-right text-[10px]"></i>
         <span class="text-slate-300">Smart Sprinkler Installation</span>
       </div>
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-white">
-        Turnkey Smart Sprinkler &amp; Irrigation Installation
-      </h1>
-      <p class="text-sm sm:text-base text-slate-300 max-w-2xl">
-        Hydraulic CAD zoning, trenchless pipe-pulling, and cloud-connected weather synchronization.
-      </p>
-      <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs font-bold w-fit">
-        <i class="fa-solid fa-tag text-emerald-400"></i>
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold bg-black/60 text-emerald-300 border border-emerald-500/40 backdrop-blur-md">
+        <i class="fa-solid fa-award text-amber-400"></i>
         <span>Starting at $1,850 &bull; 4 Zones Included &bull; Free CAD Design &bull; 5-Year Warranty</span>
       </div>
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-black text-white tracking-tight leading-tight">
+        Turnkey Smart Sprinkler &amp; <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-amber-200 drop-shadow-sm">Irrigation Installation</span>
+      </h1>
+      <p class="text-sm sm:text-lg text-neutral-200 max-w-2xl mx-auto leading-relaxed font-normal">
+        Hydraulic CAD zoning, trenchless pipe-pulling, and cloud-connected weather synchronization engineered for Texas landscapes.
+      </p>
     </div>
   </section>
 
@@ -410,16 +418,18 @@
             </div>
 
             <!-- PDF Download Box -->
-            <div class="bg-white dark:bg-[#121212] p-4 rounded-2xl border border-slate-200 dark:border-neutral-800 flex items-center justify-between gap-3">
+            <a href="assets/docs/GreenWave-Irrigation-Specs-Brochure.pdf" download="GreenWave-Irrigation-Specs-Brochure.pdf" target="_blank" class="bg-white dark:bg-[#121212] p-4 rounded-2xl border border-slate-200 dark:border-neutral-800 flex items-center justify-between gap-3 group hover:border-emerald-500/50 transition-all block">
               <div class="flex items-center gap-2.5">
-                <i class="fa-solid fa-file-pdf text-red-500 text-xl"></i>
+                <i class="fa-solid fa-file-pdf text-red-500 text-xl group-hover:scale-110 transition-transform"></i>
                 <div>
-                  <div class="text-xs font-bold text-slate-900 dark:text-white">Specs Brochure</div>
-                  <div class="text-[10px] text-slate-400">PDF Guide (3.4 MB)</div>
+                  <div class="text-xs font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">Specs Brochure</div>
+                  <div class="text-[10px] text-slate-400">PDF Guide &bull; Click to Download</div>
                 </div>
               </div>
-              <a href="#" class="text-emerald-600 dark:text-emerald-400 hover:underline text-xs font-bold"><i class="fa-solid fa-download"></i></a>
-            </div>
+              <span class="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xs font-bold group-hover:bg-emerald-600 group-hover:text-white transition-all shadow-sm">
+                <i class="fa-solid fa-download"></i>
+              </span>
+            </a>
 
           </div>
 
@@ -448,7 +458,7 @@
             <thead>
               <tr class="bg-[#121212] text-white text-[11px] uppercase tracking-wider">
                 <th class="p-4 sm:p-5 font-bold">Feature / Specification</th>
-                <th class="p-4 sm:p-5 font-bold text-slate-400">Old Mechanical Timers</th>
+                <th class="p-4 sm:p-5 font-bold text-white">Old Mechanical Timers</th>
                 <th class="p-4 sm:p-5 font-bold text-emerald-400 bg-emerald-950/60">GreenWave Smart Architecture</th>
               </tr>
             </thead>
