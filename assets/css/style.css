@@ -66,6 +66,23 @@
   --theme-badge-text: #fcd34d;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+#mobile-drawer {
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
+}
+
+#mobile-drawer.is-open {
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .dark body {
   background-color: #162829 !important;
   color: #cbd5e1 !important;
@@ -99,27 +116,24 @@
    ======================================================== */
 .floating-nav-island {
   position: fixed;
-  top: 2.75rem;
+  top: 1.25rem;
   left: 0;
   right: 0;
   margin: 0 auto;
   max-width: 80rem;
   padding: 0 1rem;
   z-index: 50;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.floating-nav-island.scrolled {
-  top: 2.25rem;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  will-change: transform;
 }
 
 @media (max-width: 640px) {
   .floating-nav-island {
-    top: 2.25rem;
+    top: 0.75rem;
     padding: 0 0.75rem;
-  }
-  .floating-nav-island.scrolled {
-    top: 2rem;
   }
 }
 
@@ -128,7 +142,7 @@
   -webkit-backdrop-filter: blur(20px);
   background: rgba(250, 247, 244, 0.95);
   border: 1px solid rgba(232, 194, 179, 0.65);
-  box-shadow: 0 12px 30px -6px rgba(35, 52, 54, 0.12), 0 4px 12px -2px rgba(35, 52, 54, 0.05);
+  box-shadow: 0 10px 25px -5px rgba(35, 52, 54, 0.1), 0 4px 10px -2px rgba(35, 52, 54, 0.04);
   border-radius: 9999px;
   padding: 0.5rem 1.25rem;
   display: flex;
@@ -136,13 +150,21 @@
   justify-content: space-between;
   gap: 1rem;
   width: 100%;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: box-shadow 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .dark .nav-island-card {
   background: rgba(26, 43, 44, 0.95);
   border-color: rgba(235, 163, 40, 0.25);
-  box-shadow: 0 12px 30px -6px rgba(10, 20, 20, 0.6);
+  box-shadow: 0 10px 25px -5px rgba(10, 20, 20, 0.5);
+}
+
+.nav-island-card.is-elevated {
+  box-shadow: 0 20px 35px -5px rgba(35, 52, 54, 0.2), 0 8px 16px -2px rgba(35, 52, 54, 0.08);
+}
+
+.dark .nav-island-card.is-elevated {
+  box-shadow: 0 20px 35px -5px rgba(0, 0, 0, 0.75), 0 8px 16px -2px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 640px) {

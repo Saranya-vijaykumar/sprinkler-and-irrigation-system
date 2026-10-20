@@ -82,32 +82,33 @@
     });
   }
 
-  // --- 3. Sticky Navbar with Scroll Shadow ---
+  // --- 3. Sticky Navbar with Smooth Elevation ---
   function initStickyNavbar() {
-    const floatingNav = document.querySelector('.floating-nav-island');
-    const headerNav = document.querySelector('header');
-    
+    const innerCard = document.querySelector('.floating-nav-island .nav-island-card');
+    if (!innerCard) return;
+
+    let isElevated = false;
+    let ticking = false;
+
+    function updateNavbar() {
+      const scrolled = window.scrollY > 20;
+      if (scrolled !== isElevated) {
+        isElevated = scrolled;
+        if (isElevated) {
+          innerCard.classList.add('is-elevated');
+        } else {
+          innerCard.classList.remove('is-elevated');
+        }
+      }
+      ticking = false;
+    }
+
     window.addEventListener('scroll', () => {
-      const isScrolled = window.scrollY > 20;
-      if (floatingNav) {
-        if (isScrolled) {
-          floatingNav.classList.add('scrolled');
-          const inner = floatingNav.querySelector('.nav-island-card');
-          if (inner) inner.classList.add('shadow-2xl', 'backdrop-blur-2xl');
-        } else {
-          floatingNav.classList.remove('scrolled');
-          const inner = floatingNav.querySelector('.nav-island-card');
-          if (inner) inner.classList.remove('shadow-2xl', 'backdrop-blur-2xl');
-        }
+      if (!ticking) {
+        window.requestAnimationFrame(updateNavbar);
+        ticking = true;
       }
-      if (headerNav) {
-        if (isScrolled) {
-          headerNav.classList.add('shadow-md', 'backdrop-blur-md');
-        } else {
-          headerNav.classList.remove('shadow-md');
-        }
-      }
-    });
+    }, { passive: true });
   }
 
   // --- 4. Mobile Navigation Drawer ---
@@ -120,12 +121,14 @@
     if (!mobileDrawer) return;
 
     function openMenu() {
+      mobileDrawer.classList.add('is-open');
       mobileDrawer.classList.remove('translate-x-full', '-translate-x-full');
       if (backdrop) backdrop.classList.remove('hidden');
       document.body.classList.add('overflow-hidden');
     }
 
     function closeMenu() {
+      mobileDrawer.classList.remove('is-open');
       const isRtl = document.documentElement.getAttribute('dir') === 'rtl';
       mobileDrawer.classList.add(isRtl ? '-translate-x-full' : 'translate-x-full');
       if (backdrop) backdrop.classList.add('hidden');
